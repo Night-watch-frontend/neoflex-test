@@ -38,7 +38,6 @@ export const Footer: FC = () => {
           <div className={styles.listLanguage}>
             <Icon title={"language"} />
             <a
-              href="/"
               data-tooltip-id="my-tooltip"
               data-tooltip-content="Сервис недоспупен"
               className={styles.navlink}>
@@ -52,7 +51,6 @@ export const Footer: FC = () => {
               {"Рус"}
             </NavLink>
             <a
-              href="/"
               data-tooltip-id="my-tooltip"
               data-tooltip-content="Сервис не доспупен"
               className={styles.navlink}>

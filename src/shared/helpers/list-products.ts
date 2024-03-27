@@ -2,7 +2,7 @@ export const headPhones = [
   {
     id: 1,
     title: "Apple BYZ S852I",
-    img: "/Image-1.png",
+    img: "/neoflex-test/Image-1.png",
     rate: "4.7",
     oldPrice: 3527,
     price: 2927,
@@ -20,7 +20,7 @@ export const headPhones = [
   {
     id: 2,
     title: "Apple EarPods",
-    img: "/Image-2.png",
+    img: "/neoflex-test/Image-2.png",
     rate: "4.5",
     oldPrice: 0,
     price: 2327,
@@ -38,7 +38,7 @@ export const headPhones = [
   {
     id: 3,
     title: "Apple EarPods",
-    img: "/Image-3.png",
+    img: "/neoflex-test/Image-3.png",
     rate: "4.5",
     oldPrice: 0,
     price: 2327,
@@ -56,7 +56,7 @@ export const headPhones = [
   {
     id: 4,
     title: "Apple BYZ S852I",
-    img: "/Image-1.png",
+    img: "/neoflex-test/Image-1.png",
     rate: "4.7",
     oldPrice: 0,
     price: 2927,
@@ -74,7 +74,7 @@ export const headPhones = [
   {
     id: 5,
     title: "Apple EarPods",
-    img: "/Image-2.png",
+    img: "/neoflex-test/Image-2.png",
     rate: "4.5",
     oldPrice: 0,
     price: 2327,
@@ -92,7 +92,7 @@ export const headPhones = [
   {
     id: 6,
     title: "Apple EarPods",
-    img: "/Image-3.png",
+    img: "/neoflex-test/Image-3.png",
     rate: "4.5",
     oldPrice: 0,
     price: 2327,
@@ -113,7 +113,7 @@ export const wireless = [
   {
     id: 7,
     title: "Apple AirPods",
-    img: "/Image-4.png",
+    img: "/neoflex-test/Image-4.png",
     rate: "4.7",
     oldPrice: 0,
     price: 9527,
@@ -131,7 +131,7 @@ export const wireless = [
   {
     id: 8,
     title: "GERLAX GH-04",
-    img: "/Image-5.png",
+    img: "/neoflex-test/Image-5.png",
     rate: "4.7",
     oldPrice: 0,
     price: 6527,
@@ -149,7 +149,7 @@ export const wireless = [
   {
     id: 9,
     title: "BOROFONE BO4",
-    img: "/Image-6.png",
+    img: "/neoflex-test/Image-6.png",
     rate: "4.7",
     oldPrice: 0,
     price: 7527,
