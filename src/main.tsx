@@ -51,7 +51,7 @@ const router = createBrowserRouter(
       element: <PageTerms />,
     },
   ],
-  { basename: "/neoflex-test/" }
+  { basename: import.meta.env.BASE_URL }
 );
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
