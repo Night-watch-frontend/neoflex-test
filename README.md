@@ -1,30 +1,87 @@
-# React + TypeScript + Vite
+# Интернет-магазин аудио аксессуаров
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Первая страница –каталог товаров, вторая – корзина с приобретенными товарами.
 
-Currently, two official plugins are available:
+1. реализован удобный и масштабируемый роутинг;
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. реализован переход с корзины обратно домой через logo;
 
-## Expanding the ESLint configuration
+3. при нажатии на «Купить» в карточке на первой странице счетчик товаров рядом с иконкой корзины увеличивается;
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+4. при изменении количества товаров в корзине, сумма и кол-во товаров изменяется;
 
-- Configure the top-level `parserOptions` property like this:
+5. реализована возможность удалять карточку товара из корзины товаров;
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+6. реализован «Переход к оформлению» на модальное окно с формой оплаты;
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+7. реализовано модальное окно с подробной информацией о товаре;
+
+8. адаптивная верстка;
+
+## Установка
+
+1. Клонирование репозитория
+
+`git clone https://github.com/Night-watch-frontend/neoflex-test.git`
+
+2. Переход в директорию neoflex-test
+
+`cd neoflex-test`
+
+3. запуск команды установки
+
+`npm i`
+
+4. запуск команды для открытия проекта на локальном сервере
+
+`npm run dev`
+
+5. запуск команды для сборки проекта в продакшн
+
+`npm run build`
+
+6. запуск команды для просмотра собранного в продакшн проекта
+
+`npm run preview`
+
+## При разработке были использованы npm пакеты:
+
+    "@hookform/resolvers": "^3.3.4"
+
+    "@reduxjs/toolkit": "^2.2.2"
+
+    "react": "^18.2.0",
+
+    "react-dom": "^18.2.0",
+
+    "react-hook-form": "^7.51.2",
+
+    "react-redux": "^9.1.0",
+
+    "react-router-dom": "^6.22.3",
+
+    "react-tooltip": "^5.26.3",
+
+    "yup": "^1.4.0"
+
+    "@types/react": "^18.2.64",
+
+    "@types/react-dom": "^18.2.21",
+
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+
+    "@typescript-eslint/parser": "^7.1.1",
+
+    "@vitejs/plugin-react": "^4.2.1",
+
+    "eslint": "^8.57.0",
+
+    "eslint-plugin-react-hooks": "^4.6.0",
+
+    "eslint-plugin-react-refresh": "^0.4.5",
+
+    "sass": "^1.72.0",
+
+    "typescript": "^5.2.2",
+
+    "vite": "^5.1.6"
