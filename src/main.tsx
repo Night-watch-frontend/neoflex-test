@@ -15,9 +15,11 @@ import store from "./store/store";
 import { Payment } from "./shared/components/payment";
 import { ProductInfo } from "./shared/components/product-information";
 
+const path = window.location.pathname;
+
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: `${path}/`,
     element: <PageHeadPhone />,
     errorElement: <Page404 />,
     children: [
@@ -28,7 +30,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/basket",
+    path: `${path}/basket`,
     element: <PageBasket />,
     children: [
       {
@@ -38,15 +40,15 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/contacts",
+    path: `${path}/contacts`,
     element: <PageContacts />,
   },
   {
-    path: "/favorites",
+    path: `${path}/favorites`,
     element: <PageFavorites />,
   },
   {
-    path: "/terms of service",
+    path: `${path}/terms of service`,
     element: <PageTerms />,
   },
 ]);
