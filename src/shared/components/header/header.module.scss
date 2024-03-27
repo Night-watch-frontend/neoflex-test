@@ -1,0 +1,85 @@
+.container {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 12px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1135px;
+
+  .logo {
+    width: 85px;
+  }
+
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+
+    a + a {
+      margin-right: 19px;
+    }
+    a svg path {
+      transition: fill 0.3s;
+    }
+
+    a:focus-visible {
+      outline: 1px solid var(--active-gold);
+      svg path {
+        fill: var(--active-gold);
+      }
+    }
+
+    a:hover svg path {
+      fill: var(--hover-gold);
+    }
+
+    a:active svg path {
+      fill: var(--active-gold);
+    }
+
+    .countLike {
+      padding: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -8px;
+      left: 17px;
+      min-width: 17.4px;
+      min-height: 18px;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18.29px;
+      color: var(--bg-card);
+      border-radius: 50%;
+      background-color: var(--active-gold);
+    }
+
+    .countItem {
+      padding: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -7px;
+      right: 10px;
+      min-width: 17.4px;
+      min-height: 18px;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18.29px;
+      border-radius: 50%;
+      color: var(--bg-card);
+      background-color: var(--active-gold);
+    }
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .container {
+    padding-right: 12px;
+  }
+}

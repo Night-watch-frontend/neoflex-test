@@ -1,0 +1,85 @@
+.container {
+  h4 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    color: var(--title-card);
+  }
+
+  form {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+
+    .inputField {
+      .label {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18.29px;
+        color: var(--color-text);
+        width: 100%;
+        position: relative;
+
+        input {
+          padding: 5px 10px;
+          width: 100%;
+          margin-bottom: 33px;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 18.29px;
+          color: var(--color-text);
+        }
+        .errorText {
+          position: absolute;
+          bottom: -27px;
+          color: red;
+        }
+      }
+    }
+
+    .btn {
+      padding: 22px 14px;
+      border-radius: 20px;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 20.72px;
+      color: var(--bg-card);
+      background-color: var(--color-black-text);
+      box-shadow: 0px 0px 20px 0px #00000040;
+      transition: color 0.5s, background-color 0.5s;
+
+      &:focus-visible {
+        outline: 1px solid var(--active-gold);
+        color: var(--color-text);
+        background-color: var(--active-gold);
+      }
+
+      &:hover {
+        color: var(--color-text);
+        background-color: var(--hover-gold);
+      }
+
+      &:active {
+        color: var(--color-text);
+        background-color: var(--active-gold);
+      }
+
+      &:disabled {
+        color: var(--bg-card);
+        background-color: var(--light-gray);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 40px;
+    h4 {
+      font-size: 16px;
+    }
+  }
+}

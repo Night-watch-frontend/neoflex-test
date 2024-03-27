@@ -1,0 +1,150 @@
+.container {
+  padding: 18px 28px 15px 18px;
+  width: 633px;
+  border-radius: 30px;
+  background-color: var(--bg-card);
+  box-shadow: 0px 0px 20px 0px #0000001a;
+
+  .top {
+    margin-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+
+    .descr {
+      display: flex;
+      align-items: center;
+      flex: 1;
+
+      &Img {
+        margin-right: 23px;
+        width: 147px;
+        height: 136px;
+      }
+
+      &Text {
+        h3 {
+          margin: 0;
+          margin-bottom: 12px;
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 20.72px;
+          color: var(--title-card);
+        }
+
+        span {
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 18.29px;
+          color: var(--light-gray);
+        }
+      }
+    }
+
+    &Btn {
+      align-self: flex-start;
+
+      svg path {
+        transition: fill 0.3s;
+      }
+
+      &:focus-visible {
+        outline: 1px solid var(--active-gold);
+
+        svg path {
+          fill: #8b0000;
+        }
+      }
+
+      &:hover svg path {
+        fill: #960018;
+      }
+
+      &:active svg path {
+        fill: #9b111e;
+      }
+    }
+  }
+
+  .bottom {
+    padding-left: 14px;
+    display: flex;
+    justify-content: space-between;
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 118px;
+
+      div {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 20.72px;
+      }
+
+      &Btn {
+        svg path {
+          transition: fill 0.3s;
+        }
+
+        &:focus-visible {
+          outline: 1px solid var(--active-gold);
+
+          svg path {
+            fill: var(--title-card);
+          }
+          svg circle {
+            fill: var(--active-gold);
+          }
+        }
+
+        &:hover {
+          svg path {
+            fill: var(--title-card);
+          }
+        }
+
+        &:active {
+          svg path {
+            fill: var(--title-card);
+          }
+          svg circle {
+            fill: var(--active-gold);
+          }
+        }
+        &:disabled {
+          svg path {
+            fill: var(--bg-card);
+          }
+          svg circle {
+            fill: var(--light-gray);
+          }
+        }
+      }
+    }
+
+    span {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 18.29px;
+      color: var(--title-card);
+    }
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .container {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 320px;
+  }
+}

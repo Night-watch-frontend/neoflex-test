@@ -1,0 +1,139 @@
+footer {
+  .container {
+    padding-top: 29px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1110px;
+    border-radius: 30px 30px 0 0;
+    background-color: var(--bg-card);
+    box-shadow: 0px 0px 20px 0px #0000001a;
+
+    .logo {
+      width: 85px;
+    }
+
+    nav {
+      padding-top: 5px;
+
+      + div {
+        padding-top: 5px;
+      }
+    }
+
+    .list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li:not(:last-child) {
+        margin-bottom: 7px;
+      }
+    }
+
+    .link {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 20.72px;
+      color: var(--color-text);
+      transition: color 0.3s;
+
+      &:focus-visible {
+        outline: 1px solid var(--active-gold);
+        color: var(--active-gold);
+      }
+
+      &:hover {
+        color: var(--hover-gold);
+      }
+
+      &:active {
+        color: var(--active-gold);
+      }
+    }
+
+    .listLanguage {
+      margin-top: 32px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 126px;
+
+      a svg path {
+        transition: fill 0.3s;
+      }
+
+      a:focus-visible {
+        outline: 1px solid var(--active-gold);
+
+        svg path {
+          fill: var(--active-gold);
+        }
+      }
+
+      a:hover svg path {
+        fill: var(--hover-gold);
+      }
+
+      a:active svg path {
+        fill: var(--active-gold);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    .container {
+      .link {
+        font-size: 14px;
+      }
+
+      .listLanguage {
+        a {
+          font-size: 10px;
+        }
+      }
+
+      .social {
+        flex-direction: column;
+        width: 80px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    .container {
+      .link {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  footer {
+    .container {
+      .link {
+        font-size: 8px;
+      }
+
+      .listLanguage {
+        a {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
